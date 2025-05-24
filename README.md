@@ -41,3 +41,24 @@ Dependendo de onde fica o servidor haverá uma latência para o processamento, o
 **Segurança:** a nuvem oferece ferramentas de segurança que atendem às necessidades dos clientes mas, é importante lembrar que a implementação de muitas delas devem ser realizadas pelo cliente; se você quiser o controle máximo da segurança, a infraestrutura como serviço fornecerá recursos físicos, mas permitirá que você gerencie os sistemas operacionais e software instalado, incluindo aplicação de patches e manutenção; se vocÊ quiser a aplicação de patches e a manutenção sejam tratadas automaticamente, as implantações de plataforma como serviço ou software como serviço podem ser as melhores estratégias de nuvem para você.
 **Governança:** a auditoria baseada em nuvem ajuda a sinalizar qualquer recurso que esteja fora de conformidade com seus padrões corporativos e fornece estratégias de mitigação; dependendo do seu modelo operacional, patches de software e atualizações também podem ser aplicados automaticamente, o que ajuda na governança e segurança; ao estabelecer uma presença de governança o mais cedo possível, você poderá manter sua presença de nuvem atualizada, protegida e bem gerenciada.
 **Gerenciabilidade:** um dos principais benefícios da computação em nuvem são as opções de capacidade de gerenciamento, há dois tipos de capacidade de gerenciamento para computação em nuvem que você aprenderá nesta série e ambos trazem excelentes benefícios; o gerenciamento da nuvem diz respeito a gerenciar seus recursos de nuvem, por exemplo, escalar automaticamente a implantação de recursos com base na necessidade, por meio de um portal da web, usando uma interface de linha de comando, usando APIs ou usando o PowerShell; implantar recursos com base em um modelo pré-configurado, removendo a necessidade de configuração manual.
+
+**Aula 5 - Tipos de Serviço de Nuvem**
+
+**IaaS, PaaS e SaaS na Azure**
+**IaaS (infraestrutura como serviço):** tendem a ser recursos/serviços onde o cliente tem mais acesso, ou seja, se envolve mais na configuração e validações, mas em contrapartida tem mais acesso ao serviço final. Crie uma infraestrutura de TI de pagamento conforme o uso alugando servidores, máquinas virtuais, armazenamento, redes e sistemas operacionais de um provedor de nuvem.
+**PaaS (plataforma como serviço):** fornece um ambiente para a criação, o teste e a implantação de aplicativos de software, sem focar no gerenciamento da infraestrutura subjacente.
+**SaaS (software como serviço):** teams/slack são plataformas SaaS; a aplicação já existe e está pronta; os usuários se conectam e usam aplicativos com base em nuvem pela internet, ex.: Microsoft Office 365, email e calendários.
+
+**Modelo de Responsabilidade Compartilhada**
+**Comparação do serviço de nuvem**
+**Iaas:** o serviço de nuvem é mais flexível, você configura e gerencia o hardware para o seu aplicativo.
+**PaaS:** focado no desenvolvimento de aplicativos, o gerenciamento da plataforma é realizado pelo provedor de nuvem.
+**SaaS:** modelo de preço de pagamento conforme o uso, os usuários pagam pelo software que utilizam em um modelo de assinatura.
+
+**Configuração de Banco de Dados no Azure**
+**Serviços disponíveis:** Azure SQL, PostgreSQL, MySQL, Cosmos DB (NoSQL), entre outros — todos gerenciados pela plataforma (PaaS).
+**Criação via Portal Azure**, CLI ou scripts (ARM, Bicep, Terraform).
+**Principais definições na criação:** Tipo e versão do banco de dados; Nome do servidor e instância; Região (impacta latência e disponibilidade); Camada de desempenho (DTU ou vCore); Autenticação: login/senha e/ou Azure AD.
+**Segurança e acesso:** Configuração de firewall e redes virtuais; Criptografia em repouso e em trânsito; Backup automático e opções de retenção.
+**Gerenciamento e monitoramento:** Azure Monitor, métricas e alertas; Escalabilidade vertical (plano) e horizontal (replicação); Alta disponibilidade e recuperação de desastres.
+**Conexão:**  Informações de endpoint fornecidas após a criação; Compatível com diversas ferramentas e linguagens.
