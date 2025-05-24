@@ -10,6 +10,7 @@ Dependendo de onde fica o servidor haverá uma latência para o processamento, o
 **Region:** lugares no mundo onde você vai encontrar conjuntos de máquinas para alugar (Iaas).
 **Zonas:** diferentes áreas dentro das regions.
 
+
 **Aula 2 - Introdução aos conceitos básicos do Microsoft Azure**
 **O que é computação em nuvem?**
 É o fornecimento de serviços de computação pela internet, habilitando inovações mais rápidas, recursos flexíveis e economias de escala.
@@ -30,17 +31,26 @@ Dependendo de onde fica o servidor haverá uma latência para o processamento, o
 **Despesas operacionais (OpEx):** gastar com produtos e serviços conforme necessário, pagamento conforme o uso; talvez seja cobrado imediatamente.
 **Modelo baseado em consumo:** os provedores de serviços em nuvem operam em um modelo baseado no consumo, o que significa que os usuários finais pagam somente pelos recursos que usam. Com isso, é possível ter melhor previsão de recursos, são fornecidos preços para recursos e serviços individuais, e a cobrança é feita com base no seu uso real.
 
+
 **Aula 3 - Benefícios da Computação em Nuvem**
 **Domínio do objetivo:** descrever os benefícios da alta disponibilidade, escalabilidade, confiabilidade, previsibilidade, segurança, governança e capacidade de gerenciamento da nuvem.
 
 **Alta disponibilidade:** recursos disponíveis sempre que necessário, serviços entregáveis; se concentra em garantir a disponibilidade máxima, independente de interrupções ou eventos que possam ocorrer
+
 **Escalabilidade:** refere-se à capacidade de ajustar recursos para atender à demanda; a capacidade de escalar significa que você poderá adicionar mais recursos para lidar melhor com o aumento da demanda; outro benefício da escalabilidade é que você não está pagando além do necessário pelos serviços, como a nuvem é um modelo baseado em consumo, você paga apenas pelo que usa, e se a demanda cair, você poderá reduzir seus recursos e assim reduzir seus custos; com a escala vertical, se você estivesse desenvolvendo um aplicativo e precisasse de mais capacidade de processamento, poderia escalar verticalmente para adicionar mais CPUs ou RAM à máquina virtual.
+
 **Elasticidade:** com a elasticidade, se você experimentasse um salto repentino acentuado na demanda, seus recursos implantados poderiam ser expandidos (automaticamente ou manualmente); você pode adicionar máquinas virtuais ou contêineres por meio da expansão, da mesma forma, se houver queda significativa na demanda, os recursos implantados poderão ser reduzidos horizontalmente (de maneira automática ou manual).
+
 **Confiabilidade:** devido ao design descentralizado, a nuvem naturalmente dá suporte a uma infraestrutura confiável e resiliente; com um design descentralizado, a nuvem permite que você tenha recursos implantados em várias regiões do mundo; com essa escala global, mesmo que ocorra um evento catastrófico em uma região, as outras regiões ainda estarão em funcionamento.
+
 **Previsibilidade:** permite que você avance com confiança, seja no desempenho ou no custo, ambas são influenciadas pelo Microsoft Azure Well-Architected Framework.
+
 **Segurança:** a nuvem oferece ferramentas de segurança que atendem às necessidades dos clientes mas, é importante lembrar que a implementação de muitas delas devem ser realizadas pelo cliente; se você quiser o controle máximo da segurança, a infraestrutura como serviço fornecerá recursos físicos, mas permitirá que você gerencie os sistemas operacionais e software instalado, incluindo aplicação de patches e manutenção; se vocÊ quiser a aplicação de patches e a manutenção sejam tratadas automaticamente, as implantações de plataforma como serviço ou software como serviço podem ser as melhores estratégias de nuvem para você.
+
 **Governança:** a auditoria baseada em nuvem ajuda a sinalizar qualquer recurso que esteja fora de conformidade com seus padrões corporativos e fornece estratégias de mitigação; dependendo do seu modelo operacional, patches de software e atualizações também podem ser aplicados automaticamente, o que ajuda na governança e segurança; ao estabelecer uma presença de governança o mais cedo possível, você poderá manter sua presença de nuvem atualizada, protegida e bem gerenciada.
+
 **Gerenciabilidade:** um dos principais benefícios da computação em nuvem são as opções de capacidade de gerenciamento, há dois tipos de capacidade de gerenciamento para computação em nuvem que você aprenderá nesta série e ambos trazem excelentes benefícios; o gerenciamento da nuvem diz respeito a gerenciar seus recursos de nuvem, por exemplo, escalar automaticamente a implantação de recursos com base na necessidade, por meio de um portal da web, usando uma interface de linha de comando, usando APIs ou usando o PowerShell; implantar recursos com base em um modelo pré-configurado, removendo a necessidade de configuração manual.
+
 
 **Aula 5 - Tipos de Serviço de Nuvem**
 
@@ -56,9 +66,15 @@ Dependendo de onde fica o servidor haverá uma latência para o processamento, o
 **SaaS:** modelo de preço de pagamento conforme o uso, os usuários pagam pelo software que utilizam em um modelo de assinatura.
 
 **Configuração de Banco de Dados no Azure**
+
 **Serviços disponíveis:** Azure SQL, PostgreSQL, MySQL, Cosmos DB (NoSQL), entre outros — todos gerenciados pela plataforma (PaaS).
+
 **Criação via Portal Azure**, CLI ou scripts (ARM, Bicep, Terraform).
+
 **Principais definições na criação:** Tipo e versão do banco de dados; Nome do servidor e instância; Região (impacta latência e disponibilidade); Camada de desempenho (DTU ou vCore); Autenticação: login/senha e/ou Azure AD.
+
 **Segurança e acesso:** Configuração de firewall e redes virtuais; Criptografia em repouso e em trânsito; Backup automático e opções de retenção.
+
 **Gerenciamento e monitoramento:** Azure Monitor, métricas e alertas; Escalabilidade vertical (plano) e horizontal (replicação); Alta disponibilidade e recuperação de desastres.
+
 **Conexão:**  Informações de endpoint fornecidas após a criação; Compatível com diversas ferramentas e linguagens.
